@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(6, 14, 6);
+    color: wheat;
+}
+
+
+.nav {
+    background-color: rgb(6, 14, 6);
+    margin: 20px;
+    height: 4vh;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+.navtext {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.social a {
+    color: wheat;
+    text-decoration: none;
+}
+
+.social i {
+    font-size: 20px;
+}
+
+
+/* MAIN IMAGE */
+
+.mainimg {
+    width: 100%;
+}
+
+.mainimg img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* ABOUT SECTION */
+
+.lowmain {
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 40px;
+}
+
+.hero {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.hero img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.about {
+    width: 500px;
+}
+
+.about p {
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+/* GOALS SECTION */
+
+.goals {
+  
+    text-align: center;
+}
+
+.goals h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.goals-subtitle {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.goals-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.goal-card {
+    height: 170px;
+    width: 250px;
+    min-height: 120px;
+
+    padding: 10px;
+
+    background-color: rgb(12, 25, 12);
+    border: 1px solid rgb(60, 90, 60);
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.goal-card:hover {
+    transform: translateY(-8px);
+}
+
+.goal-icon {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.goal-card h3 {
+    font-size: 22px;
+   
+}
+
+.goal-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .nav {
+        margin: 20px;
+        gap: 15px;
+    }
+
+    .navtext {
+        gap: 7px;
+        font-size: 14px;
+    }
+
+    .social {
+        gap: 25px;
+    }
+
+    .social i {
+        font-size: 18px;
+    }
+
+    .mainimg img {
+        height: 50vh;
+    }
+
+    .lowmain {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .hero {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about {
+        width: 400px;
+    }
+
+    .goals {
+        width: 100%;
+    }
+
+    .goals-container {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .nav {
+        height: auto;
+        margin: 15px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .navtext {
+        font-size: 12px;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .social {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 10px;
+    }
+
+    .social i {
+        font-size: 20px;
+    }
+
+
+    /* MAIN IMAGE */
+
+    .mainimg img {
+        height: 40vh;
+    }
+
+
+    /* ABOUT */
+
+    .lowmain {
+        margin: 25px;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .hero {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 15px;
+    }
+
+
+    /* GOALS */
+
+    .goals h2 {
+        font-size: 30px;
+    }
+
+    .goals-subtitle {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .goals-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .goal-card {
+        width: 250px;
+    }
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .navtext {
+        font-size: 11px;
+    }
+
+    .mainimg img {
+        height: 35vh;
+    }
+
+    .hero {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .goal-card {
+        width: 230px;
+    }
+}
